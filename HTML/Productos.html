@@ -10,30 +10,119 @@
   </head>
   <body>
     <header id="header" class="header">
-        <nav class="navbar navbar-expand-md bg-body-tertiary">
-          <div class="container-fluid">
-            <img src="../IMG/LogoTipo.png" alt="Logo de HuertoHogar" width="100" height="70">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+      <nav id="nav" class="navbar navbar-expand-md navbar-collapse  bg-white shadow-sm">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="../Images/Productos/LogoTipo.png" alt="Logo de HuertoHogar" width="80" height="55" class="me-2">
+          </a>
+
+          <!-- Botón hamburguesa para móvil -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navegación y búsqueda -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="#">Productos</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Contacto</a>
             </div>
-            <i class="bi bi-cart">Cart</i>
+            <!-- Carrito -->
+            <a href="#" class="btn btn-outline-success ms-3 position-relative">
+            <i class="bi bi-cart3 fs-5"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              2
+            <span class="visually-hidden">productos en el carrito</span>
+            </span>
+            </a>
           </div>
-        </nav>
+        </div>
+      </nav>
     </header>
 
     <div class="container my-5">
+    <section class="category-section" >
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card">
+            <div class="position-relative">
+              <img src="../Images/Productos/Manzanas-Fuji.png" class="card-img-top" alt="Manzanas Fuji">
+              <span class="product-code">FR001</span>
+              <span class="stock-badge">150 kg disponibles</span>
+            </div>
+            <div class="card-body">
+              <h5 class="product-title">Manzanas Fuji</h5>
+              <div class="product-price">$1.200 CLP/kg</div>
+              <div class="product-stock">
+                <i class="fas fa-check-circle text-success"></i> En Stock - 150 kilos
+              </div>
+              <p class="product-description">
+                Manzanas Fuji crujientes y dulces, cultivadas en el Valle del Maule. 
+                Perfectas para meriendas saludables o como ingrediente en postres.
+              </p>
+              <button class="btn btn-success btn-add-cart">
+                <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card">
+          <div class="position-relative">
+            <img src="../Images/Productos/Naranjas-valencia.png" class="card-img-top" alt="Naranjas Valencia">
+            <span class="product-code">FR002</span>
+            <span class="stock-badge">200 kg disponibles</span>
+          </div>
+          <div class="card-body">
+            <h5 class="product-title">Naranjas Valencia</h5>
+            <div class="product-price">$1.000 CLP/kg</div>
+            <div class="product-stock">
+              <i class="fas fa-check-circle text-success"></i> En Stock - 200 kilos
+            </div>
+            <p class="product-description">
+              Jugosas y ricas en vitamina C, estas naranjas Valencia son ideales para 
+              zumos frescos y refrescantes.
+            </p>
+            <button class="btn btn-success btn-add-cart">
+              <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card">
+          <div class="position-relative">
+            <img src="../Images/Productos/Platanos-cavendish.png" class="card-img-top" alt="Plátanos Cavendish">
+            <span class="product-code">FR003</span>
+            <span class="stock-badge">250 kg disponibles</span>
+          </div>
+          <div class="card-body">
+            <h5 class="product-title">Plátanos Cavendish</h5>
+            <div class="product-price">$800 CLP/kg</div>
+            <div class="product-stock">
+              <i class="fas fa-check-circle text-success"></i> En Stock - 250 kilos
+            </div>
+            <p class="product-description">
+              Plátanos maduros y dulces, perfectos para el desayuno o como snack energético. 
+              Ricos en potasio y vitaminas.
+            </p>
+            <button class="btn btn-success btn-add-cart">
+              <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <p>Verduras</p>
+
     <section class="category-section" >
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
@@ -163,7 +252,7 @@
     
     <div class="barra">
         <footer class="bg-light text-center text-lg-start mt-4">
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <div class="text-center p-3">
               © 2024 HuertoHogar:
               <a class="text-dark" href="https://huertohogar.cl/">huertohogar.cl</a>
             </div>

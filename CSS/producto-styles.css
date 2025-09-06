@@ -8,18 +8,25 @@
 }
 
 body {
-    background-color: var(--bg-principal);
-    font-family: 'Montserrat', sans-serif;
-    color: var(--texto-principal);
-    background-image: 
-        radial-gradient(circle at 1px 1px, rgba(139, 69, 19, 0.1) 1px, transparent 0);
-    background-size: 20px 20px;
+  background-image: url('../Images/Productos/FondoHTML.png');
+  background-repeat: repeat;
+  background-color: #f3f1e7;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
     color: var(--marron-claro);
 }
+
+.navbar {
+    background-color: var(--verde-esmeralda);
+}
+.navbar-nav {
+    margin: 0 auto;
+}
+
+
+
 
 .header-section {
     background: linear-gradient(135deg, var(--verde-esmeralda) 0%, #228B22 100%);
@@ -137,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-add-cart:hover {
-    background: #1e6b3f;
+    background: var(--verde-esmeralda);
     transform: translateY(-2px);
 }
 
@@ -192,16 +199,15 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
-@media (max-width: 768px) {
-    .category-title {
-        font-size: 2rem;
-    }
-    
-    .header-section {
-        padding: 40px 0;
-    }
-    
-    .filters-section {
-        text-align: center;
-    }
+.footer {
+    background-color: var(--verde-esmeralda);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

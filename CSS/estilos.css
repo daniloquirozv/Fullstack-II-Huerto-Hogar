@@ -1,0 +1,74 @@
+body{
+    background-image: url('../Images/login/parabody.jpg');
+}
+
+small{
+    display: none;
+}
+.was-validated small{
+    display: block red;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #000000d1;
+    border-radius: 10px;
+    background-color: #2e8b56b8;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+form span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.form-group input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #9b2106f3;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group input:valid {
+    border-color: #b5c10d;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+button[type="submit"] {
+    background-color: #07712e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #073c13;
+}
+.alert {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}

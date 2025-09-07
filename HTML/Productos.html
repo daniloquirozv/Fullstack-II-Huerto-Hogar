@@ -6,7 +6,7 @@
     <title>Productos</title>
     <link rel="icon" href="../Images/Productos/Icono.png" type="image/png">
     <link rel="stylesheet" href="../CSS/producto-styles.css" >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Fuentes de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
         <div class="container-fluid">
           <!-- Logo -->
           <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="../Images/Productos/LogoTipo.png" alt="Logo de HuertoHogar" width="80" height="55" class="me-2">
+          <img src="../Images/Productos/LogoTipo.png" title="Huerto Hogar" alt="Logo de HuertoHogar" width="80" height="55" class="me-2">
           </a>
 
           <!-- Botón hamburguesa para móvil -->
@@ -51,6 +51,32 @@
         </div>
       </nav>
     </header>
+
+    <div id="buscar">
+    <div class="overlay"></div>
+    <div class="container h-100 d-flex align-items-center justify-content-center">
+      <div class="row w-100">
+        <div class="col-md-6 mx-auto text-center contenido-buscar">          
+          <form class="d-flex flex-wrap gap-2 my-3">
+            <input type="text" class="form-control" placeholder="Buscar producto...">
+            <select class="form-select" style="width: 160px;">
+              <option>Categoría</option>
+              <option>Frutas Frescas</option>
+              <option>Verduras Orgánicas</option>
+              <option>Productos Orgánicos</option>
+              <option>Productos Lácteos</option>
+            </select>
+            <select class="form-select" style="width: 120px;">
+              <option>Precio</option>
+              <option>Menor a mayor</option>
+              <option>Mayor a menor</option>
+            </select>
+            <button class="btn btn-success" type="submit"><i class="bi bi-search"></i> Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <div class="container my-5">
     <section class="category-section" >
@@ -364,42 +390,6 @@
     
     
     
-    Ahi esta el buscador: <!-- Hero Section -->
-  <div id="hero">
-    <div class="overlay"></div>
-    <div class="container h-100 d-flex align-items-center justify-content-center">
-      <div class="row w-100">
-        <div class="col-md-6 mx-auto text-center contenido-hero">
-          <h2>Bienvenido a HuertoHogar</h2>
-          <p>Tu tienda en línea para productos de jardinería y huertos urbanos.</p>
-          <form class="d-flex flex-wrap gap-2 my-3">
-            <input type="text" class="form-control" placeholder="Buscar producto...">
-            <select class="form-select" style="width: 160px;">
-              <option>Categoría</option>
-              <option>Frutas Frescas</option>
-              <option>Verduras Orgánicas</option>
-              <option>Productos Orgánicos</option>
-              <option>Productos Lácteos</option>
-            </select>
-            <select class="form-select" style="width: 120px;">
-              <option>Precio</option>
-              <option>Menor a mayor</option>
-              <option>Mayor a menor</option>
-            </select>
-            <button class="btn btn-success" type="submit"><i class="bi bi-search"></i> Buscar</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -408,13 +398,41 @@
     
     
     <div class="barra">
-        <footer class="bg-light text-center text-lg-start mt-4">
+        <footer class="footer text-center text-lg-start mt-4">
             <div class="text-center p-3">
+              <img src="../Images/Productos/LogoTipo.png" alt="Logo Huerto Hogar" width="60" class="me-2 align-middle">
               © 2024 HuertoHogar:
-              <a class="text-dark" href="https://huertohogar.cl/">huertohogar.cl</a>
+              <a class="text-dark" href="https://huertohogar.cl/" target="_blank">huertohogar.cl</a>
             </div>
         </footer>
+
+        <footer class="footer py-4 mt-5 border-top">
+          <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+            <div class="mb-3 mb-md-0">
+              <img src=".." alt="HuertoHogar Logo" width="60" class="me-2 align-middle"
+                style="vertical-align: middle;">
+              <span class="fw-bold" style="color:#227a26;">© 2024 HuertoHogar</span>
+              <span class="text-muted ms-2 small">Todos los derechos reservados.</span>
+            </div>
+            <div class="mb-3 mb-md-0">
+              <a class="text-success fw-semibold ms-2" href="https://huertohogar.cl/" target="_blank"
+                rel="noopener">huertohogar.cl</a>
+            </div>
+            <div>
+              <!-- Redes Sociales (usa los íconos de Bootstrap Icons o FontAwesome) -->
+              <a href="https://facebook.com/" target="_blank" rel="noopener" class="text-success me-3 fs-4"><i
+                  class="bi bi-facebook"></i></a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener" class="text-success me-3 fs-4"><i
+                  class="bi bi-instagram"></i></a>
+              <a href="https://wa.me/56912345678" target="_blank" rel="noopener" class="text-success me-3 fs-4"><i
+                  class="bi bi-whatsapp"></i></a>
+              <a href="mailto:contacto@huertohogar.cl" class="text-success fs-4"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+          </div>
+       </footer>
     </div>
+
+
     <script>
       
     </script>

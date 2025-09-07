@@ -1,11 +1,22 @@
+html, body {
+    height: 100%;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    margin-top: auto;
+    width: 100%;
+}
 body{
     background-image: url('../Images/login/parabody.jpg');
 }
 
-small{
-    display: none;
-}
+
 .was-validated small{
+    
     display: block red;
 }
 
@@ -17,10 +28,14 @@ small{
     border-radius: 10px;
     background-color: #2e8b56b8;
 }
-
+label {
+    color: white;
+}
 .title {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
+    font-size: 25px;
+    color: white;
 }
 
 .form-group {

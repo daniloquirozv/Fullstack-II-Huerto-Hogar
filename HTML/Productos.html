@@ -1,62 +1,70 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Productos</title>
-    <link rel="icon" href="../Images/Productos/Icono.png" type="image/png">
-    <link rel="stylesheet" href="../CSS/producto-styles.css" >
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Fuentes de google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <!-- Fuentes de google -->
-  </head>
-  <body>
-    <header id="header">
-      <nav id="nav" class="navbar navbar-expand-md navbar-collapse shadow-sm">
-        <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="../Images/Productos/LogoTipo.png" title="Huerto Hogar" alt="Logo de HuertoHogar" width="80" height="55" class="me-2">
-          </a>
 
-          <!-- Botón hamburguesa para móvil -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Productos</title>
+  <link rel="icon" href="../Images/Productos/Icono.png" type="image/png">
+  <link rel="stylesheet" href="../CSS/producto-styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Fuentes de google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <!-- Fuentes de google -->
+</head>
 
-          <!-- Navegación y búsqueda -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              <a class="nav-link" href="#">Productos</a>
-              <a class="nav-link" href="#">Blog</a>
-              <a class="nav-link" href="#">Contacto</a>
-            </div>
-            <!-- Carrito -->
-            <a href="#" class="btn btn-outline-success ms-3 position-relative">
-              <img src="../Images/Productos/cart2.svg" alt="Carrito">
+<body>
+
+  <header id="header">
+    <nav id="nav" class="navbar navbar-expand-md navbar-collapse shadow-sm">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="../Images/Productos/LogoTipo.png" title="Huerto Hogar" alt="Logo de HuertoHogar" width="80"
+            height="55" class="me-2">
+        </a>
+
+        <!-- Botón hamburguesa para móvil -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navegación y búsqueda -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link" href="#">Productos</a>
+            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#">Contacto</a>
+          </div>
+          <!-- Carrito -->
+          <a href="#" class="btn btn-outline-success ms-3 position-relative">
+            <img src="../Images/Productos/cart2.svg" alt="Carrito">
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               2
-            <span class="visually-hidden">productos en el carrito</span>
+              <span class="visually-hidden">productos en el carrito</span>
             </span>
-            </a>
-          </div>
+          </a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <div id="buscar">
+  <div id="buscar">
     <div class="overlay"></div>
     <div class="container h-100 d-flex align-items-center justify-content-center">
       <div class="row w-100">
-        <div class="col-md-6 mx-auto text-center contenido-buscar">          
+        <div class="col-md-6 mx-auto text-center contenido-buscar">
           <form class="d-flex flex-wrap gap-2 my-3">
             <input type="text" class="form-control" placeholder="Buscar producto...">
             <select class="form-select" style="width: 160px;">
@@ -78,10 +86,10 @@
     </div>
   </div>
 
-    <div class="container my-5">
-    <section class="category-section" >
+  <div class="container my-5">
+    <section class="category-section">
       <div class="card">
-      <h2 class="category-title">Frutas Frescas</h2>
+        <h2 class="category-title">Frutas Frescas</h2>
         <p class="category-description">
           Nuestra selección de frutas frescas ofrece una experiencia directa del campo a
           tu hogar. Estas frutas se cultivan y cosechan en el punto óptimo de madurez para asegurar
@@ -105,7 +113,7 @@
                 <i class="fas fa-check-circle text-success"></i> En Stock - 150 kilos
               </div>
               <p class="product-description">
-                Manzanas Fuji crujientes y dulces, cultivadas en el Valle del Maule. 
+                Manzanas Fuji crujientes y dulces, cultivadas en el Valle del Maule.
                 Perfectas para meriendas saludables o como ingrediente en postres.
                 estas manzanas son conocidas por su textura firme y su sabor equilibrado entre dulce y ácido.
               </p>
@@ -116,60 +124,60 @@
           </div>
         </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="card product-card">
-          <div class="position-relative">
-            <img src="../Images/Productos/Naranjas-valencia.png" class="card-img-top" alt="Naranjas Valencia">
-            <span class="product-code">FR002</span>
-            <span class="stock-badge">200 kg disponibles</span>
-          </div>
-          <div class="card-body">
-            <h5 class="product-title">Naranjas Valencia</h5>
-            <div class="product-price">$1.000 CLP/kg</div>
-            <div class="product-stock">
-              <i class="fas fa-check-circle text-success"></i> En Stock - 200 kilos
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card">
+            <div class="position-relative">
+              <img src="../Images/Productos/Naranjas-valencia.png" class="card-img-top" alt="Naranjas Valencia">
+              <span class="product-code">FR002</span>
+              <span class="stock-badge">200 kg disponibles</span>
             </div>
-            <p class="product-description">
-              Jugosas y ricas en vitamina C, estas naranjas Valencia son ideales para 
-              zumos frescos y refrescantes. Cultivadas en condiciones climáticas óptimas que aseguran su 
-              dulzura y jugosidad.
-            </p>
-            <button class="btn btn-success btn-add-cart">
-              <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
-            </button>
+            <div class="card-body">
+              <h5 class="product-title">Naranjas Valencia</h5>
+              <div class="product-price">$1.000 CLP/kg</div>
+              <div class="product-stock">
+                <i class="fas fa-check-circle text-success"></i> En Stock - 200 kilos
+              </div>
+              <p class="product-description">
+                Jugosas y ricas en vitamina C, estas naranjas Valencia son ideales para
+                zumos frescos y refrescantes. Cultivadas en condiciones climáticas óptimas que aseguran su
+                dulzura y jugosidad.
+              </p>
+              <button class="btn btn-success btn-add-cart">
+                <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="card product-card">
-          <div class="position-relative">
-            <img src="../Images/Productos/Platanos-cavendish.png" class="card-img-top" alt="Plátanos Cavendish">
-            <span class="product-code">FR003</span>
-            <span class="stock-badge">250 kg disponibles</span>
-          </div>
-          <div class="card-body">
-            <h5 class="product-title">Plátanos Cavendish</h5>
-            <div class="product-price">$800 CLP/kg</div>
-            <div class="product-stock">
-              <i class="fas fa-check-circle text-success"></i> En Stock - 250 kilos
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card">
+            <div class="position-relative">
+              <img src="../Images/Productos/Platanos-cavendish.png" class="card-img-top" alt="Plátanos Cavendish">
+              <span class="product-code">FR003</span>
+              <span class="stock-badge">250 kg disponibles</span>
             </div>
-            <p class="product-description">
-              Plátanos maduros y dulces, perfectos para el desayuno o como snack energético. 
-              Ricos en potasio y vitaminas, ideales para mantener una dieta equelibrada.
-            </p>
-            <button class="btn btn-success btn-add-cart">
-              <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
-            </button>
+            <div class="card-body">
+              <h5 class="product-title">Plátanos Cavendish</h5>
+              <div class="product-price">$800 CLP/kg</div>
+              <div class="product-stock">
+                <i class="fas fa-check-circle text-success"></i> En Stock - 250 kilos
+              </div>
+              <p class="product-description">
+                Plátanos maduros y dulces, perfectos para el desayuno o como snack energético.
+                Ricos en potasio y vitaminas, ideales para mantener una dieta equelibrada.
+              </p>
+              <button class="btn btn-success btn-add-cart">
+                <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
+              </button>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
 
-    <section class="category-section" >
+    <section class="category-section">
       <div class="card">
-      <h2 class="category-title">Verduras</h2>
+        <h2 class="category-title">Verduras</h2>
         <p class="category-description">
           Nuestra selección de frutas frescas ofrece una experiencia directa del campo a
           tu hogar. Estas frutas se cultivan y cosechan en el punto óptimo de madurez para asegurar
@@ -204,60 +212,60 @@
           </div>
         </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="card product-card">
-          <div class="position-relative">
-            <img src="../Images/Productos/Espinacas-frescas.png" class="card-img-top" alt="Espinacas frescas">
-            <span class="product-code">VR002</span>
-            <span class="stock-badge">80 bolsas  disponibles</span>
-          </div>
-          <div class="card-body">
-            <h5 class="product-title">Espinacas Frescas</h5>
-            <div class="product-price">$700 CLP/bolsa </div>
-            <div class="product-stock">
-              <i class="fas fa-check-circle text-success"></i> En Stock - 80 bolsas
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card">
+            <div class="position-relative">
+              <img src="../Images/Productos/Espinacas-frescas.png" class="card-img-top" alt="Espinacas frescas">
+              <span class="product-code">VR002</span>
+              <span class="stock-badge">80 bolsas disponibles</span>
             </div>
-            <p class="product-description">
-              Espinacas frescas y nutritivas, perfectas para ensaladas y batidos verdes.
-              estas espinacas son cultivadas bajo practicas organicas que garantizan su calidad y valor nutricional
-            </p>
-            <button class="btn btn-success btn-add-cart">
-              <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
-            </button>
+            <div class="card-body">
+              <h5 class="product-title">Espinacas Frescas</h5>
+              <div class="product-price">$700 CLP/bolsa </div>
+              <div class="product-stock">
+                <i class="fas fa-check-circle text-success"></i> En Stock - 80 bolsas
+              </div>
+              <p class="product-description">
+                Espinacas frescas y nutritivas, perfectas para ensaladas y batidos verdes.
+                estas espinacas son cultivadas bajo practicas organicas que garantizan su calidad y valor nutricional
+              </p>
+              <button class="btn btn-success btn-add-cart">
+                <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card">
+            <div class="position-relative">
+              <img src="../Images/Productos/Pimientos-tricolores.png" class="card-img-top" alt="Pimientos tricolores">
+              <span class="product-code">VR003</span>
+              <span class="stock-badge">120 kg disponibles</span>
+            </div>
+            <div class="card-body">
+              <h5 class="product-title">Pimientos tricolores</h5>
+              <div class="product-price">$1.500 CLP/kg</div>
+              <div class="product-stock">
+                <i class="fas fa-check-circle text-success"></i> En Stock - 120 kilos
+              </div>
+              <p class="product-description">
+                Pimientos rojos, amarillos y verdes, ideales para salteados y platos
+                coloridos. Ricos en antioxidantes y vitaminas, estos pimientos añaden un toque vibrante
+                y saludable a cualquier receta.
+              </p>
+              <button class="btn btn-success btn-add-cart">
+                <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
+              </button>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="card product-card">
-          <div class="position-relative">
-            <img src="../Images/Productos/Pimientos-tricolores.png" class="card-img-top" alt="Pimientos tricolores">
-            <span class="product-code">VR003</span>
-            <span class="stock-badge">120 kg disponibles</span>
-          </div>
-          <div class="card-body">
-            <h5 class="product-title">Pimientos tricolores</h5>
-            <div class="product-price">$1.500 CLP/kg</div>
-            <div class="product-stock">
-              <i class="fas fa-check-circle text-success"></i> En Stock - 120 kilos
-            </div>
-            <p class="product-description">
-              Pimientos rojos, amarillos y verdes, ideales para salteados y platos
-              coloridos. Ricos en antioxidantes y vitaminas, estos pimientos añaden un toque vibrante
-              y saludable a cualquier receta.
-            </p>
-            <button class="btn btn-success btn-add-cart">
-              <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
-            </button>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>    
-
-    <section class="category-section" >
+    <section class="category-section">
       <div class="card">
-      <h2 class="category-title">Productos organicos</h2>
+        <h2 class="category-title">Productos organicos</h2>
         <p class="category-description">
           Nuestros productos orgánicos están elaborados con ingredientes naturales y
           procesados de manera responsable para mantener sus beneficios saludables. Desde aceites
@@ -291,35 +299,35 @@
           </div>
         </div>
 
-          <div class="col-lg-6 col-md-6">
-        <div class="card product-card">
-          <div class="position-relative">
-            <img src="../Images/Productos/Quinoa-organica.png" class="card-img-top" alt="Quinoa organica">
-            <span class="product-code">PO002</span>
-            <span class="stock-badge">100 paquetes disponibles</span>
-          </div>
-          <div class="card-body">
-            <h5 class="product-title">Quinoa organica</h5>
-            <div class="product-price">$4.500 CLP por paquete de 500g </div>
-            <div class="product-stock">
-              <i class="fas fa-check-circle text-success"></i> En Stock - 100 paquetes
+        <div class="col-lg-6 col-md-6">
+          <div class="card product-card">
+            <div class="position-relative">
+              <img src="../Images/Productos/Quinoa-organica.png" class="card-img-top" alt="Quinoa organica">
+              <span class="product-code">PO002</span>
+              <span class="stock-badge">100 paquetes disponibles</span>
             </div>
-            <p class="product-description">
-              Quinoa orgánica, natural y libre de químicos, rica en proteínas y fibra.
-              Ideal para una alimentación saludable y nutritiva, perfecta para toda la familia.
-            </p>
-            <button class="btn btn-success btn-add-cart">
-              <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
-            </button>
+            <div class="card-body">
+              <h5 class="product-title">Quinoa organica</h5>
+              <div class="product-price">$4.500 CLP por paquete de 500g </div>
+              <div class="product-stock">
+                <i class="fas fa-check-circle text-success"></i> En Stock - 100 paquetes
+              </div>
+              <p class="product-description">
+                Quinoa orgánica, natural y libre de químicos, rica en proteínas y fibra.
+                Ideal para una alimentación saludable y nutritiva, perfecta para toda la familia.
+              </p>
+              <button class="btn btn-success btn-add-cart">
+                <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
+              </button>
+            </div>
           </div>
         </div>
-      </div>      
       </div>
-      </section> 
+    </section>
 
-      <section class="category-section" >
+    <section class="category-section">
       <div class="card">
-      <h2 class="category-title">Productos lacteos</h2>
+        <h2 class="category-title">Productos lacteos</h2>
         <p class="category-description">
           Los productos lácteos de HuertoHogar provienen de granjas locales que se
           dedican a la producción responsable y de calidad. Ofrecemos una gama de leches, yogures
@@ -343,8 +351,8 @@
                 <i class="fas fa-check-circle text-success"></i> En Stock - 80 frascos
               </div>
               <p class="product-description">
-                Yogurt natural elaborado con leche fresca de granjas locales, fermentado con cultivos 
-                lácticos que le confieren su textura cremosa y sabor auténtico. 
+                Yogurt natural elaborado con leche fresca de granjas locales, fermentado con cultivos
+                lácticos que le confieren su textura cremosa y sabor auténtico.
                 Rico en probióticos, calcio y nutrientes esenciales
               </p>
               <button class="btn btn-success btn-add-cart">
@@ -354,90 +362,76 @@
           </div>
         </div>
 
-      <div class="col-lg-6 col-md-6">
-        <div class="card product-card">
-          <div class="position-relative">
-            <img src="../Images/Productos/Leche-natural.png" class="card-img-top" alt="Leche natural">
-            <span class="product-code">PL002</span>
-            <span class="stock-badge">100 Frascos disponibles</span>
-          </div>
-          <div class="card-body">
-            <h5 class="product-title">Leche fresca</h5>
-            <div class="product-price">$3.800 CLP por frasco de 1LT </div>
-            <div class="product-stock">
-              <i class="fas fa-check-circle text-success"></i> En Stock - 100 frascos
+        <div class="col-lg-6 col-md-6">
+          <div class="card product-card">
+            <div class="position-relative">
+              <img src="../Images/Productos/Leche-natural.png" class="card-img-top" alt="Leche natural">
+              <span class="product-code">PL002</span>
+              <span class="stock-badge">100 Frascos disponibles</span>
             </div>
-            <p class="product-description">
-              Leche fresca de granjas en la Región de O'Higgins, ricas en calcio y nutrientes. 
-              Con sabor auténtico y natural, perfectos para disfrutar en 
-              cualquier momento y cuidar a tu familia.
-            </p>
-            <button class="btn btn-success btn-add-cart">
-              <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
-            </button>
+            <div class="card-body">
+              <h5 class="product-title">Leche fresca</h5>
+              <div class="product-price">$3.800 CLP por frasco de 1LT </div>
+              <div class="product-stock">
+                <i class="fas fa-check-circle text-success"></i> En Stock - 100 frascos
+              </div>
+              <p class="product-description">
+                Leche fresca de granjas en la Región de O'Higgins, ricas en calcio y nutrientes.
+                Con sabor auténtico y natural, perfectos para disfrutar en
+                cualquier momento y cuidar a tu familia.
+              </p>
+              <button class="btn btn-success btn-add-cart">
+                <i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito
+              </button>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="barra">
+    <footer class="footer text-center text-lg-start mt-4">
+      <div class="text-center p-3">
+        <img src="../Images/Productos/LogoTipo.png" title="Huerto Hogar" alt="Logo Huerto Hogar" width="60"
+          class="me-2 align-middle">
+        © 2024 HuertoHogar:
+        <a class="text-dark" href="https://huertohogar.cl/" target="_blank">huertohogar.cl</a>
+        <img src="../Images/Productos/facebook-icon.svg" title="Facebook" alt="Facebook Icon" width="45">
+        <img src="../Images/Productos/instagram-icon.svg" title="Instagram" alt="Instagram icon" width="45">
+        <img src="../Images/Productos/email-icon.png" title="Email" alt="Email icon" width="40">
       </div>
-      </section>
-
-    </div>
-    </div> 
-    </div>  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="barra">
-        <footer class="footer text-center text-lg-start mt-4">
-            <div class="text-center p-3">
-              <img src="../Images/Productos/LogoTipo.png" alt="Logo Huerto Hogar" width="60" class="me-2 align-middle">
-              © 2024 HuertoHogar:
-              <a class="text-dark" href="https://huertohogar.cl/" target="_blank">huertohogar.cl</a>
-            </div>
-        </footer>
-
-        <footer class="footer py-4 mt-5 border-top">
-          <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-            <div class="mb-3 mb-md-0">
-              <img src=".." alt="HuertoHogar Logo" width="60" class="me-2 align-middle"
-                style="vertical-align: middle;">
-              <span class="fw-bold" style="color:#227a26;">© 2024 HuertoHogar</span>
-              <span class="text-muted ms-2 small">Todos los derechos reservados.</span>
-            </div>
-            <div class="mb-3 mb-md-0">
-              <a class="text-success fw-semibold ms-2" href="https://huertohogar.cl/" target="_blank"
-                rel="noopener">huertohogar.cl</a>
-            </div>
-            <div>
-              <!-- Redes Sociales (usa los íconos de Bootstrap Icons o FontAwesome) -->
-              <a href="https://facebook.com/" target="_blank" rel="noopener" class="text-success me-3 fs-4"><i
-                  class="bi bi-facebook"></i></a>
-              <a href="https://instagram.com/" target="_blank" rel="noopener" class="text-success me-3 fs-4"><i
-                  class="bi bi-instagram"></i></a>
-              <a href="https://wa.me/56912345678" target="_blank" rel="noopener" class="text-success me-3 fs-4"><i
-                  class="bi bi-whatsapp"></i></a>
-              <a href="mailto:contacto@huertohogar.cl" class="text-success fs-4"><i class="bi bi-envelope-fill"></i></a>
-            </div>
-          </div>
-       </footer>
-    </div>
+    </footer>
+  </div>
 
 
-    <script>
-      
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+  <script>
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

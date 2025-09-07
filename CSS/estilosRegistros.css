@@ -1,6 +1,9 @@
 html, body {
     height: 100%;
 }
+header{
+    background-color: #2E8B57;
+}
 body {
     min-height: 100vh;
     display: flex;
@@ -22,11 +25,11 @@ body{
 
 .container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px 20px 20px 20px;
     padding: 20px;
     border: 3px solid #000000d1;
     border-radius: 10px;
-    background-color: #2e8b56b8;
+    background-color: #2E8B57;
 }
 label {
     color: white;
@@ -65,12 +68,13 @@ form span {
 }
 
 button[type="submit"] {
-    background-color: #07712e;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+     background: linear-gradient(90deg, #59b35c 60%, #267a29 100%);
+  border: none;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 12px;
+
+
 }
 
 button[type="submit"]:hover {

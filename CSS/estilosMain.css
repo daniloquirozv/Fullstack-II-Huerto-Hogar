@@ -1,0 +1,140 @@
+body {
+  background-image: url('../IMG/FondoHTML.png');
+  background-repeat: repeat;
+  background-color: #f3f1e7;
+}
+/* Fuente principal: Montserrat para todo el texto general */
+body, .navbar, .card, .btn, .list-group-item {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Fuente de encabezado: Playfair Display para títulos principales */
+h1, h2, h3, .brand-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Opcional: combinación para resaltar aún más el logo */
+.brand-title .highlight-eco {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 800;
+}
+
+
+.navbar {
+    background-color: #2E8B57;
+}
+
+#hero {
+  background-image: url('../IMG/fondo3.avif'); /* o la URL que elijas */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  min-height: 340px;
+  box-shadow: 0 10px 30px rgba(60, 120, 40, 0.08);
+}
+#hero .overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(120deg, rgba(86,177,77,0.18) 25%, rgba(255,255,255,0.65) 70%);
+  z-index: 1;
+}
+#hero .contenido-hero {
+  position: relative;
+  z-index: 2;
+  color: #225528;
+  padding: 2rem 1rem;
+  backdrop-filter: blur(1.5px);
+}
+.hero-logo {
+  width: 90px;
+  height: auto;
+  filter: drop-shadow(0 6px 16px rgba(60, 120, 40, 0.18));
+}
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #225528;
+  letter-spacing: 1px;
+}
+.lead {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #225528;
+  font-size: 1.25rem;
+}
+.btn-success {
+  background: linear-gradient(90deg, #59b35c 60%, #267a29 100%);
+  border: none;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  padding: 0.8em 2.2em;
+  border-radius: 2em;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 180px;
+  }
+  .hero-title { font-size: 1.3rem; }
+  .hero-logo { width: 62px; }
+}
+
+/* Logo con leve animación y sombra */
+.logo-animado {
+  filter: drop-shadow(0 2px 8px rgba(60, 120, 40, 0.15));
+  transition: transform 0.2s;
+}
+.logo-animado:hover {
+  transform: scale(1.07) rotate(-2deg);
+}
+
+/* Nombre de marca destacado y amigable */
+.brand-title {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  color: #267a29;
+}
+.highlight-eco {
+  color: #59b35c;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* Estilo para los links del nav */
+.nav-hh {
+  font-weight: bold;
+  color: #267a29 !important;
+  transition: color 0.2s, background 0.2s;
+  border-radius: 0.4rem;
+  margin: 0 0.3em;
+  padding: 0.5em 1em;
+}
+.nav-hh:hover, .nav-hh.active {
+  background: linear-gradient(90deg,#e3fcec 10%,#c0eac3 100%);
+  color: #14781c !important;
+}
+
+/* Botón carrito eco */
+.btn-eco {
+  border: 2px solid #59b35c;
+  color: #267a29;
+  background: #e3fcec;
+  font-weight: bold;
+  border-radius: 1.5rem;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.btn-eco:hover {
+  background: #59b35c;
+  color: #fff;
+  border: 2px solid #267a29;
+}

@@ -13,30 +13,39 @@
 </head>
 
 <body>
-    <header id="header" class="header" style="width:100%;padding:0;margin:0;">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100" style="width:100%;margin:0;padding:0;">
-            <div class="container-fluid" style="width:100%;margin:0;padding:0 2vw;">
-                <img src="../Images/login/huerto-hogar.jpg" alt="Logo de HuertoHogar" width="100" height="70">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Pricing</a>
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
-                <i class="bi bi-cart">Cart</i>
+    <header id="header">
+      <nav id="nav" class="navbar navbar-expand-md navbar-collapse  bg-white shadow-sm">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="../Images/Productos/LogoTipo.png" alt="Logo de HuertoHogar" width="80" height="55" class="me-2">
+          </a>
+
+          <!-- Botón hamburguesa para móvil -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navegación y búsqueda -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="#">Productos</a>
+              <a class="nav-link" href="Blog.html">Blog</a>
+              <a class="nav-link" href="#">Contacto</a>
             </div>
-        </nav>
+            <!-- Carrito -->
+            <a href="#" class="btn btn-outline-success ms-3 position-relative">
+            <i class="bi bi-cart3 fs-5"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              2
+            <span class="visually-hidden">productos en el carrito</span>
+            </span>
+            </a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <div class="container">

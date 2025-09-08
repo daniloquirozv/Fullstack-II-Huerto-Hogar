@@ -22,6 +22,10 @@ body {
     overflow-y: auto;
     
 }
+
+.navbar-nav {
+    margin: 0 auto; 
+}
 .btn-region {
     color: white;
     background-color: #2E8B57;

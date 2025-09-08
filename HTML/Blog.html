@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Noticias Importantes</title>
+  <link rel="stylesheet" href="../CSS/estilosBlog.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+  <!-- Encabezado -->
+ <header id="header">
+      <nav id="nav" class="navbar navbar-expand-md navbar-collapse  bg-white shadow-sm">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="../Images/Productos/LogoTipo.png" alt="Logo de HuertoHogar" width="80" height="55" class="me-2">
+          </a>
+
+          <!-- Botón hamburguesa para móvil -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navegación y búsqueda -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="#">Productos</a>
+              <a class="nav-link" href="Blog.html">Blog</a>
+              <a class="nav-link" href="#">Contacto</a>
+            </div>
+            <!-- Carrito -->
+            <a href="#" class="btn btn-outline-success ms-3 position-relative">
+            <i class="bi bi-cart3 fs-5"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              2
+            <span class="visually-hidden">productos en el carrito</span>
+            </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+  <!-- Contenido principal -->
+  <main>
+    <h1>NOTICIAS IMPORTANTES</h1>
+
+    <section class="noticia">
+      <div class="texto">
+        <h2>Proyecto Vida Rural UC: instalan huertos familiares en seis comunas capitalinas</h2>
+        <p>La fundación dio inicio a su proyecto Huertas Familiares Comunitarias orientado a las comunas de Pudahuel, Estación Central, Macul, La Granja, Cerro Navia, La Florida y Santiago.</p>
+        <button onclick="window.location.href='https://agronomia.uc.cl/noticias/proyecto-vida-rural-uc-instalan-huertos-familiares-en-seis-comunas-capitalinas'">VER CASO</button>
+      </div>
+      <div class="imagen">
+        <img src="../Images/Blog/proyecto vida rural.jpg" alt="Imagen del caso 1">
+      </div>
+    </section>
+
+    <section class="noticia">
+      <div class="texto">
+        <h2>Autoridades locales visitaron centro hidropónico del CCP Iquique</h2>
+        <p>Iniciativa enmarcada en un convenio entre SQM Yodo Nutrición Vegetal y Gendarmería de Chile busca entregar conocimientos y preparar a las internas para su reinserción social.</p>
+        <button onclick="window.location.href='https://sqm.com/noticia/autoridades-locales-visitaron-centro-hidroponico-del-ccp-iquique/'">VER CASO</button>
+      </div>
+      <div class="imagen">
+        <img src="../Images/Blog/centro-hrido-iquique.webp" alt="Imagen del caso 2">
+      </div>
+    </section>
+
+    <section class="noticia">
+      <div class="texto">
+        <h2>Ministerio de Agricultura impulsa Huertos Urbanos en la Región Metropolitana</h2>
+        <p> Mejorar el acceso a alimentos, generar una mayor eficiencia de los espacios en las ciudades, además de apoyar las condiciones económicas de productores y consumidores, son algunos de los beneficios de la agricultura urbana</p>
+        <button onclick="window.location.href='https://minagri.gob.cl/noticia/ministerio-de-agricultura-impulsa-huertos-urbanos-en-la-region-metropolitana/'">VER CASO</button>
+      </div>
+      <div class="imagen">
+        <img src="../Images/Blog/huerto-urbano-en-santiago.jpg" alt="Imagen del caso 2">
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer>
+
+    <div class="barra">
+      <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2024 HuertoHogar:
+          <a class="text-dark" href="https://huertohogar.cl/">huertohogar.cl</a>
+        </div>
+      </footer>
+    </div>
+
+
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>

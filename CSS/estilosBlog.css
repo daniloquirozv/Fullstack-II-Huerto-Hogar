@@ -74,7 +74,7 @@ h1 {
 
 .noticia .texto h2 {
   margin-top: 0;
-  color: #2e8b57;
+  color: #2e8b56;
   font-size: 1.5rem;
 }
 
@@ -127,9 +127,9 @@ h1 {
     background: #eafaf1;
   }
   .noticia .imagen img {
-    width: 100%;
-    margin: 0;
-    border-radius: 0 0 8px 8px;
+    width: 50%;
+    margin: 0 auto 20px auto;
+    border-radius:  0 8px 8px;
   }
   .noticia .texto {
     padding: 24px 16px;

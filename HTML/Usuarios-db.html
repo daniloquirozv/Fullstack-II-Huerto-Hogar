@@ -63,16 +63,104 @@
         </aside>
         <div class="main-content"
             style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-            <section class="section-dashboard">
-                <h2>Portal de administracion</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit nullam aptent penatibus sodales sed, orci
-                    lacinia congue inceptos urna vel et iaculis sem viverra nam. Magna faucibus eleifend id porta
-                    sociosqu ut class per, nam nascetur quis habitant vel laoreet donec montes, purus senectus lacinia
-                    lectus pellentesque nec ornare. Urna nibh sollicitudin inceptos dui sociosqu diam tempor fusce nam
-                    nullam dignissim taciti, consequat porta potenti odio leo eu torquent nunc augue nisi laoreet
-                    varius, nisl cursus habitasse erat suscipit tincidunt vivamus iaculis natoque praesent magna.
-                </p>
+           <section class="section-dashboard" style="flex: 1;">
+                <h1>Gestión de Usuarios</h1>
+                <p>Desde este panel puedes administrar los usuarios de la tienda.</p>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Email</th>
+                                <th>Ciudad</th>
+                                <th>Rol</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td>AD001</td>
+                                <td>Juan Perez</td>
+                                <td>J.perez@huerto.cl</td>
+                                <td>Santiago</td>
+                                <td>Admin</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>US002</td>
+                                <td>Angel Prado</td>
+                                <td>Ang.Prdo@huerto.cl</td>
+                                <td>Valparaiso</td>
+                                <td>User</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>US003</td>
+                                <td>Pedro Gonzales</td>
+                                <td>p.gonzales@huerto.cl</td>
+                                <td>Puerto Montt</td>
+                                <td>User</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GS001</td>
+                                <td>Pedro Pascal</td>
+                                <td>p.pascal@gmail.com</td>
+                                <td>Puerto Montt</td>
+                                <td>Guest</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GS002</td>
+                                <td>Pamela Diaz</td>
+                                <td>pam.diazF@gmail.com</td>
+                                <td>Villarica</td>
+                                <td>Guest</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GS003</td>
+                                <td>Carla Chavez</td>
+                                <td>carlitx.chavez@gmail.com</td>
+                                <td>Concepcion</td>
+                                <td>Guest</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GS004</td>
+                                <td>Cesar Milan</td>
+                                <td>prr.milan@gmail.com</td>
+                                <td>Viña del mar</td>
+                                <td>Guest</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>                            
+                        </tbody>
+                    </table>
+                </div>
+                <button class="btn btn-success mt-3">Agregar Nuevo Usuario</button>
             </section>
 
             <div style="flex: 1;"></div>

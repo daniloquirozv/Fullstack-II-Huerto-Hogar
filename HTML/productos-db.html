@@ -58,25 +58,67 @@
             <ul>
                 <li><a href="../HTML/dashboard.html">Inicio</a></li>
                 <li><a href="../HTML/Usuarios-db.html">Usuarios</a></li>
-                <li><a href="../HTML/productos-db.html"class="dashboard-active">Productos</a></li>
+                <li><a href="../HTML/productos-db.html" class="dashboard-active">Productos</a></li>
             </ul>
         </aside>
-        <div class="main-content"
-            style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-            <section class="section-dashboard">
-                <h2>Portal de administracion</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit nullam aptent penatibus sodales sed, orci
-                    lacinia congue inceptos urna vel et iaculis sem viverra nam. Magna faucibus eleifend id porta
-                    sociosqu ut class per, nam nascetur quis habitant vel laoreet donec montes, purus senectus lacinia
-                    lectus pellentesque nec ornare. Urna nibh sollicitudin inceptos dui sociosqu diam tempor fusce nam
-                    nullam dignissim taciti, consequat porta potenti odio leo eu torquent nunc augue nisi laoreet
-                    varius, nisl cursus habitasse erat suscipit tincidunt vivamus iaculis natoque praesent magna.
-                </p>
+        <div class="main-content" style="flex: 1; display: flex; flex-direction: column; min-height: 100vh;">
+            <section class="section-dashboard" style="flex: 1;">
+                <h1>Gestión de Productos</h1>
+                <p>Desde este panel puedes administrar los productos de la tienda.</p>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Categoría</th>
+                                <th>Precio</th>
+                                <th>Stock</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Ejemplo de fila de producto -->
+                            <tr>
+                                <td>FR001</td>
+                                <td>Manzanas Fuji</td>
+                                <td>Frutas frescas</td>
+                                <td>$1.200</td>
+                                <td>150</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>VR001</td>
+                                <td>Zanahorias Organicas</td>
+                                <td>Verduras organicas</td>
+                                <td>$900</td>
+                                <td>100</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PO001</td>
+                                <td>Miel Organica</td>
+                                <td>Productos Organicos</td>
+                                <td>$5.000</td>
+                                <td>50</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <!-- Más filas de productos -->
+                        </tbody>
+                    </table>
+                </div>
+                <button class="btn btn-success mt-3">Agregar Nuevo Producto</button>
             </section>
-
-            <div style="flex: 1;"></div>
-            <footer class="footer text-center text-lg-start mt-4">
+            <footer class="footer text-center text-md-start mt-4">
                 <div class="text-center p-3">
                     <img src="../Images/Dashboard/LogoTipo.png" title="Huerto Hogar" alt="Logo Huerto Hogar" width="60"
                         class="me-2 align-middle">

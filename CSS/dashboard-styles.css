@@ -18,3 +18,27 @@ h1, h2, h3, .brand-title {
   letter-spacing: 1px;
 }
 
+/* Estilos Navbar */
+.navbar{
+    background-color: var(--verde-esmeralda);
+}
+.navbar-nav {
+    margin: 0 auto; 
+}
+
+/* Estilos Aside */
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background: var(--verde-esmeralda);
+    color: var(--texto-principal);
+    position: sticky;             
+}
+.sidebar a {
+        color: var(--texto-principal);
+        text-decoration: none;
+}
+

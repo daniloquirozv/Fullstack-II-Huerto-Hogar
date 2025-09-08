@@ -32,6 +32,7 @@ h1, h2, h3, .brand-title {
     min-height: 100vh;
 }
 .sidebar {
+    padding: 10px;
     width: 250px;
     background: var(--verde-esmeralda);
     color: var(--texto-principal);
@@ -40,5 +41,41 @@ h1, h2, h3, .brand-title {
 .sidebar a {
         color: var(--texto-principal);
         text-decoration: none;
+}
+ul li{
+  list-style: none;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.section-dashboard{
+  padding: 15px;
+  text-align: center;
+}
+.dashboard-active{
+  background-color: var(--amarillo-mostaza);  
+  border-radius: 5px;
+}
+p {
+    color: var(--texto-secundario);
+    line-height: 1.6;
+}
+
+
+
+.footer {
+    background-color: var(--verde-esmeralda);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 

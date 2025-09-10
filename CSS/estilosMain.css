@@ -1,5 +1,5 @@
 body {
-  background-image: url('../IMG/FondoHTML.png');
+  background-image: url('../Images/Menu/FondoHTML.png');
   background-repeat: repeat;
   background-color: #f3f1e7;
 }
@@ -21,13 +21,20 @@ h1, h2, h3, .brand-title {
   font-weight: 800;
 }
 
-
+/* Navbar con color verde natural */
 .navbar {
     background-color: #2E8B57;
 }
 
+/* Centrar los elementos del navbar */
+#navbarNavAltMarkup .navbar-nav {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
 #hero {
-  background-image: url('../IMG/fondo3.avif'); /* o la URL que elijas */
+  background-image: url('../Images/Menu/fondo3.avif'); /* o la URL que elijas */
   background-size: cover;
   background-position: center;
   position: relative;

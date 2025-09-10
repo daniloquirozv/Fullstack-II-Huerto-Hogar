@@ -4,52 +4,64 @@
     --amarillo-mostaza: #FFD700;
     --marron-claro: #8B4513;
     --texto-principal: #333333;
-    --texto-secundario: #666666; 
+    --texto-secundario: #666666;
 }
+
 body {
-  background-image: url('../Images/Productos/FondoHTML.png');
-  background-repeat: repeat;
-  background-color: var(--bg-principal);
+    background-image: url('../Images/Productos/FondoHTML.png');
+    background-repeat: repeat;
+    background-color: var(--bg-principal);
 }
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  letter-spacing: 1px;
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
 }
 
 /* Estilos personalizados */
 
 /* Buscador productos */
-#buscar {  
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  min-height: auto;
-  box-shadow: 0 10px 30px rgba(60, 120, 40, 0.08);
+#buscar {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: auto;
+    box-shadow: 0 10px 30px rgba(60, 120, 40, 0.08);
 }
+
 #buscar .overlay {
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: linear-gradient(135deg, rgba(86,177,77,0.5) 25%, rgba(255,255,255,0.7) 75%);
-  z-index: 1;
-}   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(86, 177, 77, 0.5) 25%, rgba(255, 255, 255, 0.7) 75%);
+    z-index: 1;
+}
+
 #buscar .contenido-buscar {
-  position: relative;
-  z-index: 2;
-  color: var(--verde-esmeralda);
-  padding: 2rem 1rem;
-  backdrop-filter: blur(1.5px);
+    position: relative;
+    z-index: 2;
+    color: var(--verde-esmeralda);
+    padding: 2rem 1rem;
+    backdrop-filter: blur(1.5px);
 }
 
 /* Navbar superior */
-.navbar{
+.navbar {
     background-color: var(--verde-esmeralda);
 }
+
 .navbar-nav {
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 /* Descripcion */
@@ -57,6 +69,7 @@ h1, h2, h3 {
     margin-bottom: 40px;
     margin-top: 40px;
 }
+
 .category-title {
     font-size: 2.5rem;
     font-weight: 500;
@@ -65,6 +78,7 @@ h1, h2, h3 {
     position: relative;
     background-color: var(--verde-esmeralda);
 }
+
 .category-description {
     color: var(--texto-secundario);
     text-align: center;
@@ -78,48 +92,57 @@ h1, h2, h3 {
 .product-card {
     transition: all 0.3s ease;
     border: none;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     overflow: hidden;
     height: 100%;
 }
+
 .product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(46, 139, 87, 0.2);
 }
+
 .card-img-top {
     height: 300px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
+
 .product-card:hover .card-img-top {
     transform: scale(1.05);
 }
+
 .card-body {
     padding: 25px;
 }
+
 .product-title {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 15px;
     color: var(--marron-claro);
 }
+
 .product-price {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--verde-esmeralda);
     margin-bottom: 10px;
 }
+
 .product-stock {
     color: var(--texto-secundario);
     font-size: 0.9rem;
     margin-bottom: 15px;
 }
+
 .product-description {
     color: var(--texto-secundario);
     line-height: 1.5;
     margin-bottom: 20px;
 }
+
 .product-code {
     background: var(--verde-esmeralda);
     color: white;
@@ -131,6 +154,7 @@ h1, h2, h3 {
     top: 10px;
     left: 10px;
 }
+
 .stock-badge {
     position: absolute;
     top: 10px;
@@ -167,6 +191,11 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: center;
 }
-.rs-icon{
-    background-color: rgb(0, 0, 0);
+
+.rs-icon {
+    color: rgb(0, 0, 0);
+}
+
+.footer-tiendas {
+    color: var(--texto-principal);
 }

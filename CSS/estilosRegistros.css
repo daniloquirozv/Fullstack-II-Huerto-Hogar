@@ -1,99 +1,195 @@
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url("../Images/login/verduras-login.jpeg");
-    background-size: cover;
-    background-position: center;
-}
-/* Alinear label de región con los otros labels */
-.region-group {
-    display: flex;
-    flex-direction: column;
-}
-.region-group label {
-    margin-bottom: 4px;
-}
-.region-group .input-group {
-    width: 100%;
-}
-.region-scroll {
-    max-height: 200px;
-    overflow-y: auto;
-    
-}
+/*
+    Paleta de colores y variables globales
+    - Centraliza colores y estilos reutilizables para consistencia del sitio
+*/
+:root {
+    --bg-principal: #F7F7F7;
+    --verde-esmeralda: #2E8B57;
+    --verde-esmeralda-oscuro: #17613a;
+    --amarillo-mostaza: #FFD700;
 
-.navbar-nav {
-    margin: 0 auto; 
-}
-.btn-region {
-    color: white;
-    background-color: #2E8B57;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.btn-region[type="button"]:hover{
-    background-color: #073c13;
-
-}
-html, body {
-    height: 100%;
-}
-footer {
-    margin-top: auto;
-    width: 100%;
-    flex-shrink: 0;
-}
-.container {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    border: 5px solid #0eaa15a1;
-    border-radius: 10px;
-    background-image: url("../Images/Productos/FondoHTML.png");
-    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.15);
-    
-}
-.was-validated small{
-    
-    display: block red;
-}
-@media (max-width: 600px) {
-    .container {
-        padding: 10px;
+    /*
+        Paleta de colores y variables globales
+        - Centraliza colores y estilos reutilizables para consistencia del sitio
+    */
+    :root {
+        --bg-principal: #F7F7F7;
+        --verde-esmeralda: #2E8B57;
+        --verde-esmeralda-oscuro: #17613a;
+        --amarillo-mostaza: #FFD700;
+        --marron-claro: #8B4513;
+        --texto-principal: #333333;
+        --texto-secundario: #666666;
     }
-}
-button[type="submit"] {
-    background-color: #2E8B57;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-button[type="submit"]:hover {
-    background-color: #073c13;
-}
-label,p  {
-    color: rgb(4, 120, 12);
+    /*
+        Estructura base de la página
+        - Hace que el footer se pegue al fondo con flex en columna
+        - Aplica imagen de fondo y ajustes de cobertura
+    */
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../Images/login/verduras-login.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: var(--bg-principal);
+    }
 
-}
-.title {
-    text-align: center;
-    margin-bottom: 2px;
-    font-size: 25px;
-    color: rgb(4, 120, 12);
-}
-form span {
-    display: block;
-    margin-bottom: 5px;
-}
-a {
-    color: #2E8B57;
-}
-a:hover {
-    color: #7ddf04;
+    /* Barra de navegación (navbar) */
+    .navbar {
+        background-color: var(--verde-esmeralda);
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+    }
+
+
+    /*
+        Caja del formulario de registro (centrado)
+        - Tamaño máximo, borde decorativo y sombra
+        - Fondo con imagen sutil    
+    */
+    .container {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        border: 5px solid #0eaa15a1;
+        border-radius: 10px;
+        background-image: url("../Images/Productos/FondoHTML.png");
+        box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
+
+    }
+
+    /* Título principal del formulario */
+    .title {
+        text-align: center;
+        margin-bottom: 2px;
+        font-size: 25px;
+        color: var(--verde-esmeralda);
+    }
+
+    /* Tipografía y color en etiquetas y párrafos dentro del formulario */
+    label,
+    p {
+        color: var(--verde-esmeralda);
+    }
+
+    /* Espaciado de spans informativos en el formulario */
+    form span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* Enlaces dentro de la caja del formulario */
+    .container a {
+        color: var(--verde-esmeralda);
+    }
+
+    .container a:hover {
+        color: #7ddf04;
+    }
+
+    /*
+        Botón Enviar
+        - Usa el verde institucional; si el HTML usa .btn.btn-primary
+            puede prevalecer Bootstrap. Ajustar clases o especificidad según necesidad.
+    */
+    button[type="submit"] {
+        background-color: var(--verde-esmeralda);
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: var(--verde-esmeralda-oscuro);
+    }
+
+    /*
+        Botón del selector de Región
+        - Estilo de botón personalizado en la barra del input-group
+    */
+    .btn-region {
+        color: #fff;
+        background-color: var(--verde-esmeralda);
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Hover del botón Región */
+    .btn-region[type="button"]:hover {
+        background-color: var(--verde-esmeralda-oscuro);
+
+    }
+
+    /*
+        Menú desplegable de regiones (scroll interno)
+        - Limita la altura del dropdown y habilita scroll vertical
+    */
+    .region-scroll {
+        max-height: 200px;
+        overflow-y: auto;
+
+    }
+
+    /*
+        Mensajes de validación (Bootstrap)
+        - Muestra los textos de ayuda en bloque y en rojo cuando hay validación
+    */
+    .was-validated small {
+        display: block;
+        color: red;
+    }
+
+    /*
+        Responsivo: compacta el padding de la caja en móviles pequeños
+    */
+    @media (max-width: 600px) {
+        .container {
+            padding: 10px;
+        }
+    }
+
+    /* Pie de página (footer) */
+    .footer {
+        background-color: var(--verde-esmeralda);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    /*
+        Footer pegado abajo
+        - Empuja el footer al final cuando el contenido es corto
+    */
+    footer {
+        margin-top: auto;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Íconos de redes sociales: heredan color utilitario (p.ej., .text-success) */
+    .rs-icon {
+        color: inherit;
+    }
+
+    /* Bloque de direcciones y horarios en el footer */
+    .footer-tiendas {
+        color: white;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 20px;
+    }
 }

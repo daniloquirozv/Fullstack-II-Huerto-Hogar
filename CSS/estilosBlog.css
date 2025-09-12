@@ -1,91 +1,102 @@
+/* Variables globales del tema */
+:root {
+  --bg-principal: #F7F7F7;
+  --verde-esmeralda: #2E8B57;
+  --verde-esmeralda-oscuro: #17613a;
+  --amarillo-mostaza: #FFD700;
+  --marron-claro: #8B4513;
+  --texto-principal: #333333;
+  --texto-secundario: #666666;
+}
+
+/* Estilos base del documento */
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f4f4f4;
   color: #222;
+  background-color: #f4f4f4;
+  background-image: url("../Images/Productos/FondoHTML.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+/* Barra de navegación (navbar) */
+.navbar {
+  background-color: var(--verde-esmeralda);
+}
 
 .navbar-nav {
-    margin: 0 auto; 
+  margin: 0 auto;
 }
+
+/* Logotipo/branding */
 .logo {
   font-size: 1.7rem;
   font-weight: bold;
   letter-spacing: 1px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.2s;
-}
-
-nav ul li a:hover {
-  color: #b5e7c2;
-}
-
+/* Etiqueta del carrito/badge */
 .cart {
   font-size: 1.2rem;
   background: #fff;
-  color: #2e8b57;
+  color: var(--verde-esmeralda);
   padding: 6px 16px;
   border-radius: 20px;
   font-weight: 500;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
+/* Contenedor principal del contenido del blog */
 main {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
+/* Título principal de la página */
 h1 {
   text-align: center;
   margin-bottom: 40px;
-  color: #2e8b57;
+  color: var(--verde-esmeralda);
   font-size: 2.3rem;
 }
 
+/* Tarjeta de noticia: layout y contenedor */
 .noticia {
   display: flex;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
   margin-bottom: 32px;
   overflow: hidden;
   align-items: center;
 }
 
+/* Columna de texto de la tarjeta */
 .noticia .texto {
   flex: 1;
   padding: 32px 28px;
 }
 
+/* Subtítulo dentro de la tarjeta */
 .noticia .texto h2 {
   margin-top: 0;
-  color: #2e8b56;
+  color: var(--verde-esmeralda);
   font-size: 1.5rem;
 }
 
+/* Párrafo descriptivo */
 .noticia .texto p {
   margin: 18px 0 24px 0;
   font-size: 1.08rem;
   color: #444;
 }
 
+/* Botón de acción de la tarjeta */
 .noticia .texto button {
-  background: #2e8b57;
+  background: var(--verde-esmeralda);
   color: #fff;
   border: none;
   padding: 10px 28px;
@@ -95,10 +106,12 @@ h1 {
   transition: background 0.2s;
 }
 
+/* Hover del botón de acción */
 .noticia .texto button:hover {
-  background: #17613a;
+  background: var(--verde-esmeralda-oscuro);
 }
 
+/* Columna de imagen de la tarjeta */
 .noticia .imagen {
   flex: 0 0 260px;
   height: 100%;
@@ -108,6 +121,7 @@ h1 {
   background: #eafaf1;
 }
 
+/* Imagen dentro de la tarjeta */
 .noticia .imagen img {
   width: 220px;
   height: auto;
@@ -116,66 +130,54 @@ h1 {
   margin: 20px;
 }
 
+/* Ajustes responsivos para móviles/tabla pequeña */
 @media (max-width: 800px) {
   .noticia {
     flex-direction: column;
     align-items: stretch;
   }
+
   .noticia .imagen {
     flex: none;
     justify-content: flex-start;
     background: #eafaf1;
   }
+
   .noticia .imagen img {
     width: 50%;
     margin: 0 auto 20px auto;
-    border-radius:  0 8px 8px;
+    border-radius: 0 8px 8px;
   }
+
   .noticia .texto {
     padding: 24px 16px;
   }
-  header {
-    flex-direction: column;
-    gap: 10px;
-    padding: 18px 10px;
-  }
 }
 
-body {
-    background-image: url("../Images/Productos/FondoHTML.png");
+/* Pie de página (footer) */
+.footer {
+  background-color: var(--verde-esmeralda);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
+/* Layout interno del footer */
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+/* Íconos del footer heredan color utilitario */
+.rs-icon {
+  color: inherit;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Bloque de direcciones/horarios en el footer */
+.footer-tiendas {
+  color: white;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 20px;
+}

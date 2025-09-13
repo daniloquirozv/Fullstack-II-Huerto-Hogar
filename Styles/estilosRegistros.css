@@ -1,0 +1,245 @@
+/*
+    Paleta de colores y variables globales
+    - Centraliza colores y estilos reutilizables para consistencia del sitio
+*/
+:root {
+    --bg-principal: #F7F7F7;
+    --verde-esmeralda: #2E8B57;
+    --verde-esmeralda-oscuro: #17613a;
+    --amarillo-mostaza: #FFD700;
+
+    /*
+        Paleta de colores y variables globales
+        - Centraliza colores y estilos reutilizables para consistencia del sitio
+    */
+    :root {
+        --bg-principal: #F7F7F7;
+        --verde-esmeralda: #2E8B57;
+        --verde-esmeralda-oscuro: #17613a;
+        --amarillo-mostaza: #FFD700;
+        --marron-claro: #8B4513;
+        --texto-principal: #333333;
+        --texto-secundario: #666666;
+    }
+
+    /*
+        Estructura base de la página
+        - Hace que el footer se pegue al fondo con flex en columna
+        - Aplica imagen de fondo y ajustes de cobertura
+    */
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../Images/login/verduras-login.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: var(--bg-principal);
+    }
+
+    /* Barra de navegación (navbar) */
+    .navbar {
+        background-color: var(--verde-esmeralda);
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+    }
+
+
+    /*
+        Caja del formulario de registro (centrado)
+        - Tamaño máximo, borde decorativo y sombra
+        - Fondo con imagen sutil    
+    */
+    .container {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        border: 5px solid #0eaa15a1;
+        border-radius: 10px;
+        background-image: url("../Images/Productos/FondoHTML.png");
+        box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
+
+    }
+
+    /* Título principal del formulario */
+    .title {
+        text-align: center;
+        margin-bottom: 2px;
+        font-size: 25px;
+        color: var(--verde-esmeralda);
+    }
+
+    /* Tipografía y color en etiquetas y párrafos dentro del formulario */
+    label,
+    p {
+        color: var(--verde-esmeralda);
+    }
+
+    /* Espaciado de spans informativos en el formulario */
+    form span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* Enlaces dentro de la caja del formulario */
+    .container a {
+        color: var(--verde-esmeralda);
+    }
+
+    .container a:hover {
+        color: #7ddf04;
+    }
+
+    /*
+        Botón Enviar
+        - Usa el verde institucional; si el HTML usa .btn.btn-primary
+            puede prevalecer Bootstrap. Ajustar clases o especificidad según necesidad.
+    */
+    button[type="submit"] {
+        background-color: var(--verde-esmeralda);
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: var(--verde-esmeralda-oscuro);
+    }
+
+    /*
+        Botón del selector de Región
+        - Estilo de botón personalizado en la barra del input-group
+    */
+    .btn-region {
+        color: #fff;
+        background-color: var(--verde-esmeralda);
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Hover del botón Región */
+    .btn-region[type="button"]:hover {
+        background-color: var(--verde-esmeralda-oscuro);
+
+    }
+
+    /*
+        Menú desplegable de regiones (scroll interno)
+        - Limita la altura del dropdown y habilita scroll vertical
+    */
+    .region-scroll {
+        max-height: 200px;
+        overflow-y: auto;
+
+    }
+
+    /*
+        Mensajes de validación (Bootstrap)
+        - Muestra los textos de ayuda en bloque y en rojo cuando hay validación
+    */
+    .was-validated small {
+        display: block;
+        color: red;
+    }
+
+    /*
+        Responsivo: compacta el padding de la caja en móviles pequeños
+    */
+    @media (max-width: 600px) {
+        .container {
+            padding: 10px;
+        }
+    }
+
+    /* Pie de página (footer) */
+    .footer {
+        background-color: var(--verde-esmeralda);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+   /* Footer con estilo ecológico */
+.footer-eco {
+  background: linear-gradient(135deg, var(--verde-esmeralda) 80%, #37714b 100%);
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+  box-shadow: 0 -4px 24px rgba(60,120,40,0.09);
+  margin-top: 48px;
+}
+.footer-eco .eco-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #FFD700;
+  letter-spacing: 1px;
+}
+.footer-eco .footer-list li {
+  margin-bottom: 0.35em;
+  font-size: 1rem;
+}
+.footer-eco .footer-list {
+  padding-left: 8px;
+}
+
+.footer-eco .footer-mapa {
+  border: 3px solid #FFD700;
+  box-shadow: 0 2px 14px rgba(60,120,40,0.10);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+.footer-social .social-link {
+  color: #FFD700;
+  background: #225528;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: background .2s, color .2s, transform .2s;
+  box-shadow: 0 2px 8px rgba(60,120,40,0.08);
+}
+.footer-social .social-link:hover {
+  background: #FFD700;
+  color: #225528;
+  transform: scale(1.11) rotate(-4deg);
+  text-decoration: none;
+}
+
+.footer-logo {
+  filter: drop-shadow(0 2px 12px rgba(255,255,255,0.12));
+  transition: transform .18s;
+}
+.footer-logo:hover {
+  transform: scale(1.07) rotate(-2deg);
+}
+
+/* Responsive: apila las columnas en móviles */
+@media (max-width: 991px) {
+  .footer-eco .container-fluid > .row > div {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .footer-eco {
+    border-radius: 16px 16px 0 0;
+    font-size: 0.95rem;
+    padding-bottom: 2rem;
+  }
+  .footer-logo {
+    width: 110px !important;
+  }
+}
+}

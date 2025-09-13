@@ -1,0 +1,123 @@
+/* Propios de CSS */
+:root {
+    --bg-principal: #F7F7F7;
+    --verde-esmeralda: #2E8B57;
+    --amarillo-mostaza: #FFD700;
+    --marron-claro: #8B4513;
+    --texto-principal: #333333;
+    --texto-secundario: #666666; 
+}
+body {
+  background-image: url('../Images/Dashboard/FondoHTML.png');
+  background-repeat: repeat;
+  background-color: var(--bg-principal);
+}
+h1, h2, h3, .brand-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--texto-principal);
+  justify-content: center;
+}
+
+/* Estilos Navbar */
+.navbar{
+    background-color: var(--verde-esmeralda);
+}
+.navbar-nav {
+    margin: 0 auto; 
+}
+#navbarNavAltMarkup .navbar-nav {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+/* Estilos Aside */
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    padding: 10px;
+    width: 250px;
+    background: var(--verde-esmeralda);
+    color: var(--texto-principal);
+    position: sticky;             
+}
+.sidebar a {
+        color: var(--texto-principal);
+        text-decoration: none;
+}
+ul li{
+  list-style: none;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+ul li{
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--texto-secundario);
+}
+
+/* Estilos fondo y color del Aside */
+.section-dashboard{
+  padding: 15px;
+  text-align: center;
+}
+.dashboard-active{
+  background-color: var(--amarillo-mostaza);  
+  border-radius: 5px;
+}
+p {
+    color: var(--texto-secundario);
+    line-height: 1.6;
+}
+
+/* Tablas usuario y productos */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.table th {
+    background-color: #2E8B57;
+    color: white;
+    font-weight: 600;
+}
+
+.table tr:hover {
+    background-color: #F9F9F9;
+}
+
+/* Pie de pagina */
+.footer {
+  background-color: var(--verde-esmeralda);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  position: static;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

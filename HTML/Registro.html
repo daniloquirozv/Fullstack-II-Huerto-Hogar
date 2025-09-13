@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" href="../Images/login/BCO.e1e81ab7-ef6b-4c1f-9db8-573c7e537640.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HuertoHogar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../Styles/estilosRegistros.css">
+</head>
+
+<body>
+  <header id="header">
+
+    <nav id="nav" class="navbar navbar-expand-md navbar-collapse shadow-sm">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="../Images/login/huerto-hogar.jpg" title="Huerto Hogar" alt="Logo de HuertoHogar" width="80"
+            height="55" class="me-2">
+        </a>
+
+        <!-- Botón hamburguesa para móvil -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navegación y búsqueda -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link" href="Productos.html">Productos</a>
+            <a class="nav-link" href="Blog.html">Blog</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
+            <a class="nav-link" href="InicioSesion.html">Inicio Sesion</a>
+          </div>
+          <!-- Carrito -->
+
+          </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <div class="title">Registro</div>
+    <form id="for-validation" novalidate>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+        <div class="invalid-feedback">Por favor ingrese nombre</div>
+      </div>
+      <div class="mb-3">
+        <label for="apellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido"
+          required>
+        <div class="invalid-feedback">Por favor ingrese apellido</div>
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo" required>
+        <div class="invalid-feedback">Por favor ingrese correo</div>
+      </div>
+
+      <div class="input-group mb-3">
+        <button class="btn-region btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">Región</button>
+
+        <ul class="dropdown-menu region-scroll">
+          <li><a class="dropdown-item" href="#">Arica y Parinacota</a></li>
+          <li><a class="dropdown-item" href="#">Tarapacá</a></li>
+          <li><a class="dropdown-item" href="#">Antofagasta</a></li>
+          <li><a class="dropdown-item" href="#">Atacama</a></li>
+          <li><a class="dropdown-item" href="#">Coquimbo</a></li>
+          <li><a class="dropdown-item" href="#">Valparaíso</a></li>
+          <li><a class="dropdown-item" href="#">Región Metropolitana</a></li>
+          <li><a class="dropdown-item" href="#">O'Higgins</a></li>
+          <li><a class="dropdown-item" href="#">Maule</a></li>
+          <li><a class="dropdown-item" href="#">Ñuble</a></li>
+          <li><a class="dropdown-item" href="#">Biobío</a></li>
+          <li><a class="dropdown-item" href="#">Araucanía</a></li>
+          <li><a class="dropdown-item" href="#">Los Ríos</a></li>
+          <li><a class="dropdown-item" href="#">Los Lagos</a></li>
+          <li><a class="dropdown-item" href="#">Aysén</a></li>
+          <li><a class="dropdown-item" href="#">Magallanes</a></li>
+        </ul>
+        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Ingrese su contraseña"
+          required>
+        <div class="invalid-feedback">Por favor ingrese contraseña</div>
+      </div>
+      <div class="mb-3">
+        <label for="password2" class="form-label">Confirmar Contraseña</label>
+        <input type="password" class="form-control" id="password2" name="password2" placeholder="Repita su contraseña"
+          required>
+        <div class="invalid-feedback" id="password2-feedback">repita contraseña</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Registrarse</button>
+    </form>
+  </div>
+
+
+  <!-- Pie de página elegante -->
+  <footer class="footer-eco">
+    <div class="container-fluid py-4">
+      <div class="row gy-4 align-items-center">
+        <!-- Tiendas y horarios -->
+        <div class="col-lg-4 col-md-6 text-start">
+          <h5 class="eco-title mb-3">Tiendas físicas y horarios</h5>
+          <ul class="list-unstyled footer-list mb-2">
+            <li><b>Santiago:</b> Salomón Sumal 3420, San Joaquín. <br> Tel: +56 987654321</li>
+            <li><b>Viña del Mar:</b> Calle Valparaíso 463, Local 128, Galería Cristal. <br> Tel: +56 987654321</li>
+            <li><b>Valparaíso:</b> Pedro Montt 2502, Valparaíso. <br> Tel: +56 987654321</li>
+            <li><b>Villarica:</b> Camilo Henríquez 544 <br> Tel: +56 987654321</li>
+            <li><b>Nacimiento:</b> San Martín 443 <br> Tel: +56 987654321</li>
+            <li><b>Puerto Montt:</b> Calle Antihual 965 <br> Tel: +56 987654321</li>
+            <li><b>Concepción:</b> Freire 1049 <br> Tel: +56 987654321</li>
+          </ul>
+          <p class="mb-0"><b>Horarios:</b> Lunes a viernes 09:00 - 19:30 / Sábados 09:00 - 14:00</p>
+        </div>
+        <!-- Mapa -->
+        <div class="col-lg-4 col-md-6 text-center">
+          <h5 class="eco-title mb-3">Encuéntranos</h5>
+          <div class="footer-mapa rounded-4 overflow-hidden shadow-sm mb-2">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.google.com/maps?q=Salomón+Sumal+3420,+San+Joaquín&output=embed" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <!-- Contacto y redes -->
+        <div id="contacto" class="col-lg-4 text-center">
+          <h5 class="eco-title mb-3">Contáctanos</h5>
+          <div class="footer-social mb-3">
+            <a href="https://facebook.com/" title="Facebook" target="_blank" class="social-link"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/" title="Instagram" target="_blank" class="social-link"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/56912345678" title="Whatsapp" target="_blank" class="social-link"><i
+                class="bi bi-whatsapp"></i></a>
+            <a href="mailto:contacto@huertohogar.cl" title="Correo" class="social-link"><i
+                class="bi bi-envelope-fill"></i></a>
+          </div>
+          <img src="../Images/Productos/LogoTipo.png" alt="Logotipo" width="160" class="footer-logo mb-2 logo-animado">
+          <div class="small mt-3 text-white-50">
+            <div>© 2024 Huerto Hogar</div>
+            <div>Todos los derechos reservados.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  
+  <!-- uso de mi script -->
+  <script>
+    const addForm = document.getElementById('for-validation');
+    const pass1 = document.getElementById('password');
+    const pass2 = document.getElementById('password2');
+    addForm.addEventListener('submit', function (event) {
+      // Validar que ambas contraseñas coincidan
+      if (pass1.value !== pass2.value) {
+        pass2.setCustomValidity('Las contraseñas no coinciden');
+        document.getElementById('password2-feedback').textContent = 'Las contraseñas no coinciden';
+      } else {
+        pass2.setCustomValidity('');
+        document.getElementById('password2-feedback').textContent = 'Por favor repita contraseña';
+      }
+      if (!addForm.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      addForm.classList.add('was-validated');
+    });
+    // Limpiar el customValidity al escribir
+    pass2.addEventListener('input', function () {
+      if (pass1.value !== pass2.value) {
+        pass2.setCustomValidity('Las contraseñas no coinciden');
+        document.getElementById('password2-feedback').textContent = 'Las contraseñas no coinciden';
+      } else {
+        pass2.setCustomValidity('');
+        document.getElementById('password2-feedback').textContent = 'Por favor repita contraseña';
+      }
+    });
+  </script>
+  <script>
+    // Región: poner valor seleccionado en el input
+    document.addEventListener('DOMContentLoaded', function () {
+      const regionMenu = document.querySelector('.region-scroll');
+      const regionInput = document.querySelector('.input-group input.form-control');
+      if (regionMenu && regionInput) {
+        regionMenu.addEventListener('click', function (e) {
+          if (e.target.classList.contains('dropdown-item')) {
+            regionInput.value = e.target.textContent.trim();
+          }
+        });
+      }
+    });
+  </script>
+  <script>
+    // Mensaje de error en el placeholder si el campo está vacío y es inválido
+    const campos = [
+      { id: 'nombre', mensaje: 'Por favor ingrese nombre' },
+      { id: 'apellido', mensaje: 'Por favor ingrese apellido' },
+      { id: 'correo', mensaje: 'Por favor ingrese correo' },
+      { id: 'password', mensaje: 'Por favor ingrese contraseña' },
+      { id: 'password2', mensaje: 'Por favor repita contraseña' }
+    ];
+
+    campos.forEach(campo => {
+      const input = document.getElementById(campo.id);
+      if (!input) return;
+      const placeholderOriginal = input.placeholder;
+      input.addEventListener('invalid', function (e) {
+        if (!input.value) {
+          input.placeholder = campo.mensaje;
+        }
+      });
+      input.addEventListener('input', function (e) {
+        input.placeholder = placeholderOriginal;
+      });
+    });
+  </script>
+</body>
+
+</html>

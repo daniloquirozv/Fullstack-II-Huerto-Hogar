@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="icon" href="../Images/Dashboard/Icono.png" type="image/png">
+    <link rel="stylesheet" href="../CSS/dashboard-styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- Fuentes de google -->
+
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav" class="navbar navbar-expand-md navbar-collapse shadow-sm">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="../Images/Dashboard/LogoTipo.png" title="Huerto Hogar" alt="Logo de HuertoHogar"
+                        width="80" height="55" class="me-2">
+                </a>
+
+                <!-- Botón hamburguesa para móvil -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navegación y búsqueda -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" aria-current="page" href="#">Tienda</a>
+                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="main-layout" style="display: flex; flex-direction: row; min-height: 100vh;">
+        <aside id="admin-menu" class="sidebar">
+            <h2>Panel de Administración</h2>
+            <ul>
+                <li><a href="../HTML/dashboard.html">Inicio</a></li>
+                <li><a href="../HTML/Usuarios-db.html" class="dashboard-active">Usuarios</a></li>
+                <li><a href="../HTML/productos-db.html">Productos</a></li>
+            </ul>
+        </aside>
+        <div class="main-content"
+            style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+           <section class="section-dashboard" style="flex: 1;">
+                <h1>Gestión de Usuarios</h1>
+                <p>Desde este panel puedes administrar los usuarios de la tienda.</p>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Email</th>
+                                <th>Ciudad</th>
+                                <th>Rol</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td>AD001</td>
+                                <td>Juan Perez</td>
+                                <td>J.perez@huerto.cl</td>
+                                <td>Santiago</td>
+                                <td>Admin</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>US002</td>
+                                <td>Angel Prado</td>
+                                <td>Ang.Prdo@huerto.cl</td>
+                                <td>Valparaiso</td>
+                                <td>User</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>US003</td>
+                                <td>Pedro Gonzales</td>
+                                <td>p.gonzales@huerto.cl</td>
+                                <td>Puerto Montt</td>
+                                <td>User</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GS001</td>
+                                <td>Pedro Pascal</td>
+                                <td>p.pascal@gmail.com</td>
+                                <td>Puerto Montt</td>
+                                <td>Guest</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GS002</td>
+                                <td>Pamela Diaz</td>
+                                <td>pam.diazF@gmail.com</td>
+                                <td>Villarica</td>
+                                <td>Guest</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GS003</td>
+                                <td>Carla Chavez</td>
+                                <td>carlitx.chavez@gmail.com</td>
+                                <td>Concepcion</td>
+                                <td>Guest</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GS004</td>
+                                <td>Cesar Milan</td>
+                                <td>prr.milan@gmail.com</td>
+                                <td>Viña del mar</td>
+                                <td>Guest</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                                </td>
+                            </tr>                            
+                        </tbody>
+                    </table>
+                </div>
+                <button class="btn btn-success mt-3">Agregar Nuevo Usuario</button>
+            </section>
+
+            <div style="flex: 1;"></div>
+            <footer class="footer text-center text-lg-start mt-4">
+                <div class="text-center p-3">
+                    <img src="../Images/Dashboard/LogoTipo.png" title="Huerto Hogar" alt="Logo Huerto Hogar" width="60"
+                        class="me-2 align-middle">
+                    © 2024 HuertoHogar:
+                    <a class="text-dark" href="https://huertohogar.cl/" target="_blank">huertohogar.cl</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -59,6 +59,11 @@ p {
 .navbar-nav {
     margin: 0 auto;
 }
+#navbarNavAltMarkup .navbar-nav {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
 
 
 /* Descripcion */

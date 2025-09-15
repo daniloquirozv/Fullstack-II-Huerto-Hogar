@@ -5,7 +5,7 @@ body {
   background-color: #f3f1e7;
 }
 /* Fuente principal: Montserrat para todo el texto general */
-body, .navbar, .card, .btn, .list-group-item {
+.card, .btn, .list-group-item {
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
@@ -24,7 +24,7 @@ h1, h2, h3, .brand-title {
 
 /* Navbar con color verde natural */
 .navbar {
-    background-color: var(--verde-esmeralda);
+    background-color: var(--verde-esmeralda);    
 }
 
 .navbar-nav {
